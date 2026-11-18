@@ -1,0 +1,6 @@
+{
+  "name": "ছোট্ট বন্ধু পাঠশালা — Little Buddy Learning World",
+  "description": "৪ বছরের শিশুর জন্য রঙিন পশুপাখি ও আনন্দের অ্যানিমেশনের মাধ্যমে বাংলা, ইংরেজি, ফোনেটিক্স, ১-১০০ ও রোমান সংখ্যা এবং ছোট যোগ-বিয়োগ শেখার খেলার মাঠ।",
+  "requestFramePermissions": ["microphone"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

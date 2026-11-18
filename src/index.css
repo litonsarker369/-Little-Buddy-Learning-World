@@ -1,0 +1,50 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Hind Siliguri", "Plus Jakarta Sans", system-ui, sans-serif;
+  --font-display: "Fredoka", "Hind Siliguri", system-ui, sans-serif;
+  --color-canvas: #FFFDF7;
+  --color-sky-soft: #F4FAFF;
+}
+
+@layer base {
+  html,
+  body {
+    background-color: #FFFDF7;
+    color: #1E293B;
+    font-family: var(--font-sans);
+    -webkit-tap-highlight-color: transparent;
+    overscroll-behavior-y: contain;
+    overflow-x: clip;
+  }
+
+  button {
+    touch-action: manipulation;
+  }
+}
+
+.safe-pb {
+  padding-bottom: max(0.35rem, env(safe-area-inset-bottom, 0px));
+}
+
+.safe-pt {
+  padding-top: env(safe-area-inset-top, 0px);
+}
+
+.font-display {
+  font-family: var(--font-display);
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
